@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: @project.artifactId@
+    version: @project.version@
+  datasource:
+
+    url: jdbc:mysql://127.0.0.1:3306/mbk_fancy
+    username: root #${mysql.username}
+    password:  #${mysql.password}
+  redis:
+    host: ${redis.host}
+    port: ${redis.port}
+

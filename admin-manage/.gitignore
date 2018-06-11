@@ -1,0 +1,9 @@
+build/
+out/
+.idea/
+.gradle/
+/src/main/resources/public/pages
+
+**/node_modules/
+**/typings/
+**/npm-debug.*

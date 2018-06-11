@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+
+    <title>Spring Boot - todo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+
+
+
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+
+
+    <script type="text/javascript" src="./app/app.js"></script>
+    <script type="text/javascript" src="./app/controllers.js"></script>
+    <script type="text/javascript" src="./app/services.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.post("/fancy",{
+                    name:"菜鸟教程",
+                    url:"http://localhost:8080"
+                },
+                function(data,status){
+                    //alert("数据: \n" + data + "\n状态: " + status);
+                    $("#page_result").text("data : " + data + " status: " + status);
+                });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+<div id="page_result"> </div>
+
+
+</div>
+
+
+
+
+<footer class="container-fluid foot-wrap">
+    <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="navbar-inner navbar-content-center">
+        <p class="text-muted">&copy;2017 fancyiOS</p>
+            </div>
+        </nav>
+    </div>
+</footer>
+</footer>
+
+
+
+
+
+
+</body>
+</html>
